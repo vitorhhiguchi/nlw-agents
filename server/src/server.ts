@@ -12,7 +12,7 @@ const app = fastify().withTypeProvider<ZodTypeProvider>()
 
 // O host de onde nosso frontend vai ter que estar rodando para consumir a API
 app.register(fastifyCors, {
-  origin: 'http//localhost:5173',
+  origin: 'http://localhost:5173',
 })
 
 app.setSerializerCompiler(serializerCompiler)
